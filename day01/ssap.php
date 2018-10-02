@@ -2,7 +2,7 @@
 <?php
     array_shift($argv);
     $s = implode(" ", $argv);
-    $str = explode(" ", $s);
+    $str = array_map('trim',array_filter(explode(' ',$s)));
     sort($str);
     for($i = 0; $i < count($str);$i++)
         printf("%s\n", $str[$i]);
