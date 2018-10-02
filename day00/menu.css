@@ -1,5 +1,5 @@
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: RED;
     color: white;
     width: 100%;
     padding: 16px;
@@ -10,6 +10,7 @@
 
 .dropdown {
     position: relative;
+    background-color: yellow;
     width: 25%;
     display: inline-block;
 }
@@ -18,7 +19,7 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: 15%;
+    width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -52,6 +53,14 @@
     -webkit-animation: random 5s infinite;
     animation: random 2s infinite;
 }
+@keyframes rand{
+    0%   {background-color:red}
+    25%  {background-color:yellow;}
+    75%  {background-color:green;}
+    50%  {background-color:blue;}
+    100% {background-color:red;}
+}
+
 @keyframes  random {
     0%   {color:red}
     25%  {color:yellow;}
