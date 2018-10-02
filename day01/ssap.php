@@ -6,4 +6,5 @@
     sort($str);
     for($i = 0; $i < count($str);$i++)
         printf("%s\n", $str[$i]);
+    print_r($str);
 ?>
