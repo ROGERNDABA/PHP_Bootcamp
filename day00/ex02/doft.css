@@ -1,0 +1,203 @@
+body
+{
+	background-color: 	#404040;
+}
+
+.item1
+{
+	/* background-color: pink; */
+	position: absolute;
+	top: 2px;
+	align: right;
+	right: .5%;
+	width: 20%;
+	height: 150%;
+}
+
+#close
+{
+	width: .5vw;
+	height: .5vw;
+	position: absolute;
+	bottom: 40%;
+	right: 8%;
+}
+
+.header
+{
+	background-color: #909090;
+	background-image: url('resources/day_of_the_42.png');
+	background-repeat: no-repeat;
+	background-position:left center;
+	box-shadow: 8px 8px 12px black;
+	border-radius: 10px;
+	position: absolute;
+	margin-top: 2%;
+	margin-left: 10%;
+	width: 75%;
+	height: 8vw;
+	background-size: 30%;
+}
+.middle
+{
+	position: absolute;
+	left: 12%;
+	top: 22%;
+	width: 72%;
+	height: 70%;
+}
+.sidebar1
+{
+	background-color: #909090;
+	box-shadow: 8px 8px 12px black;
+	border-radius: 10px;
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	width: 12%;
+	height: 80%;
+}
+
+.sidebar2
+{
+	background-color:#909090;
+	box-shadow: 8px 8px 12px black;
+	border-radius: 10px;
+	position: absolute;
+	left: 85%;
+	top: 2%;
+	width: 12%;
+	height: 80%;
+}
+
+.pic
+{
+	align-items:  flex-end;
+	background-color: #909090;
+	box-shadow: 8px 8px 12px black;
+	border-radius: 10px;
+	position: absolute;
+	left:  17%;
+	top: 2%;
+	width: 65%;
+	height: 100%;
+}
+
+.identity
+{
+	font-family: Consolas;
+	display: none;
+	color: yellow;
+	text-decoration: none;
+	z-index: 1;
+}
+
+img{z-index: -0;}
+.images
+{
+	position: absolute;
+	left: 1%;
+	top: 1%;
+}
+
+a:hover .identity
+{
+	display: inline;
+	text-decoration: none;
+}
+
+.images2
+{
+	position: absolute;
+	float: unset;
+	left:1.5vw;
+	top: 1vw;
+	align-items: center;
+}
+.middle:hover .sidebar1:hover .images2:hover .identity
+{
+   display: inline;
+   text-decoration: none;
+}
+
+.outil:hover .identity
+{
+   display: inline;
+   text-decoration: none;
+}
+
+.oeil:hover .identity
+{
+	display: inline;
+	text-decoration: none;
+	position: absolute;
+	bottom: 0%;
+}
+
+.chat-icon:hover .middle:hover .sidebar1:hover .images2:hover .identity
+{
+	display: inline;
+	text-decoration: none;
+}
+.img3 {top:6vw;}
+.towel {top:8vw;}
+.brick {
+	background-image: url("resources/brick.jpg");
+	background-size: 6.5vw;
+	background-size: 30%;
+	position: absolute;
+	left: .5vw;
+	top:13vw;
+	width: 90%;
+	height: 15%;
+}
+.outil {top:20vw;}
+.chat-icon {top:25vw;}
+.oeil {
+	background-image: url("resources/oeil.png");
+	background-repeat: no-repeat;
+	background-size: 6.5vw;
+	border: 8px solid red;
+	border-radius: 10px;
+	position: absolute;
+	left: .5vw;
+	top:12vw;
+	width: 75%;
+	height: 20%;
+}
+
+.the_input
+{
+	background-color: #bafc96;
+	position: relative;
+	top: 33vw;
+	border-radius: 15px;
+	right: 5vw;
+	width: 28vw;
+	height: 8vw;
+	padding-top: 1vw;
+	padding-left: 1vw;
+	font-family: sans-serif;
+	font-size: .9vw;	
+}
+
+h4{
+	/* padding-top: 15px; */
+	width: auto;
+	padding-left: 10px;
+}
+.input2
+{
+	position: absolute;
+	left:1vw;
+	top: 5vw;
+	border: 2px solid silver;
+}
+
+input
+{
+	position: absolute;
+	left:20vw;
+	top: 5vw;
+	border: 2px solid silver;
+}

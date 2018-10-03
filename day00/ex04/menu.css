@@ -1,0 +1,44 @@
+#drop
+{
+    color: white;
+    background-color:lightblue;
+    font-family: Consolas;
+    font-size: 1vw;
+    width: 23vw;
+    height: 35px;
+    -webkit-animation: rand 5s infinite;
+    animation: rand 2s infinite;
+
+}
+
+.header
+{
+    text-align: center;
+    font-family: Consolas;
+    font-size: 6vw;
+    padding: 0%;
+    color: pink;
+    width: auto;
+    height: auto;
+    -webkit-animation: random 5s infinite;
+    animation: random 2s infinite;
+}
+@keyframes rand{
+    0%   {background-color:red}
+    25%  {background-color:hotpink;}
+    75%  {background-color:green;}
+    50%  {background-color:blue;}
+    100% {background-color:red;}
+}
+
+@keyframes  random {
+    0%   {color:red}
+    25%  {color:yellow;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+    0%, 20%, 60%, 100% {-webkit-transform: translateY(0);transform: translateY(0);}
+    40% {-webkit-transform: translateY(-20px);transform: translateY(-20px);}
+    80% { -webkit-transform: translateY(-10px);transform: translateY(-10px);}
+}
+
