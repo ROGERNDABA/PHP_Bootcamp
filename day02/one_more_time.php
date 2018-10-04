@@ -1,9 +1,8 @@
 #!/usr/bin/php
 <?php
-
     array_shift($argv);
-    $r = array("janvier" => 0, "février" => 1,"mars" => 2, "avril" => 3,"mai" => 4, "juin" => 5,
-                "juillet" => 6, "août" => 7,"septembre" => 8, "octobre" => 9,"novembre" => 10, "décembre" => 11);
+    $r = array("janvier" => 1, "février" => 2,"mars" => 3, "avril" => 4,"mai" => 5, "juin" => 6,
+        "juillet" => 7, "août" => 8,"septembre" => 9, "octobre" => 10,"novembre" => 11, "décembre" => 12);
     $q = array("lundi" => 0 , "mardi" => 2 , "mercredi" => 2, "jeudi" => 3 , "vendredi" => 4 , "samedi" => 5, "dimanche" => 6);
     $s = array_map('trim',array_filter(explode(' ', $argv[0])));
     if (count($s) != 5)
@@ -18,11 +17,11 @@
             echo "Wrong Formart\n";
         else
         {
+            date_default_timezone_set('Europe/Paris');
+            echo mktime($e[0], $e[1], $e[1], $r[$s[2]], $s[1], $s[3])."\n";
             array_shift($e);
-            echo ($s[3] - 1970)."\n";  
-            $x = (($s[3] - 1970) * 31536000) + (($r[$s[2]] - 1) * 2592000) + $s[1] * 86400 + $e[0] * 3600 + $e[1] * 60 + $e[2];
-            echo $x."\n".$r[$s[2]]."\n";
             print_r($e);
+            print_r($s);
         }
     }
 ?>
